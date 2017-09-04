@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyView">
+        <attr name="huancolor" format="color"/>
+        <attr name="huanwidth" format="dimension"/>
+    </declare-styleable>
+</resources>

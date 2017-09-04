@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhanggang.zhangzhoukao1.MainActivity">
+
+    <Button
+        android:id="@+id/button_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setColor"
+        android:text="设置颜色"/>
+    <Button
+        android:id="@+id/button_jia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_color"
+        android:onClick="setjia"
+        android:text="加速"/>
+    <Button
+        android:id="@+id/button_jian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_jia"
+        android:onClick="setjian"
+        android:text="减速"/>
+    <Button
+        android:id="@+id/button_pause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_jian"
+        android:onClick="setPase"
+        android:text="暂停"/>
+
+    <com.example.zhanggang.zhangzhoukao1.MyView
+        android:id="@+id/myview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:huancolor="@color/colorAccent"
+        app:huanwidth="5dp"/>
+
+</RelativeLayout>
